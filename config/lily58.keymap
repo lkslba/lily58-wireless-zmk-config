@@ -108,7 +108,7 @@
 &trans             &trans          &kp UP_ARROW    &kp N3           &trans   &kp N5                     &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DIVIDE  &trans
 &trans             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F5   &kp F6                     &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS       &trans
 &kp F7             &kp F8          &kp F9          &kp F10          &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS            &kp KP_NUMBER_0  &trans           &kp KP_DOT       &trans         &trans
-                                                   &trans           &trans   &trans   &trans    &trans  &trans                 &trans           &trans
+                                                   &trans           &to 0    &trans   &trans    &trans  &trans                 &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;

@@ -51,14 +51,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        cp: copy_paste {
-            compatible = "zmk,behavior-tap-dance";
-            label = "COPY_PASTE";
-            #binding-cells = <0>;
-            bindings = <&kp K_COPY>, <&kp K_PASTE>;
-
-            tapping-term-ms = <100>;
-        };
     };
 
     keymap {

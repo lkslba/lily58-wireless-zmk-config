@@ -68,14 +68,12 @@
 
             label = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                     &trans     &kp PIPE   &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                                           &kp F7     &kp F8     &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                                        &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &kp LESS_THAN    &kp GREATER_THAN  &trans     &kp MINUS  &kp KP_PLUS      &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans           &trans            &trans     &trans     &trans
+&bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4                                          &none          &kp PIPE   &none            &kp EQUAL  &Apo_Q    &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5            &kp F6                                                &kp F7         &kp F8     &kp F9           &kp F10    &kp F11   &kp F12
+&kp CAPSLOCK  &kp EXCL      &kp PERCENT   &kp HASH      &kp TILDE         &kp AT_SIGN                                           &kp CARET      &kp AMPS   &kp KP_MULTIPLY  &kp LPAR   &kp RPAR  &kp DOLLAR
+&trans        &none         &none         &none         &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LESS_THAN    &kp GREATER_THAN  &kp BACKSLASH  &kp MINUS  &kp KP_PLUS      &kp LBRC   &kp RBRC  &kp PIPE
+                                          &trans        &trans            &trans             &trans           &trans            &trans         &trans     &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise_layer {
@@ -88,11 +86,11 @@
 
             label = "Raise";
             bindings = <
-&ext_power EP_TOG  &sys_reset      &bootloader     &trans           &trans   &trans                     &kp EQUAL              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK   &trans
-&trans             &trans          &kp UP_ARROW    &kp N3           &trans   &kp N5                     &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DIVIDE  &trans
-&trans             &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp F5   &kp F6                     &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS       &trans
-&trans             &kp F8          &kp F9          &kp F10          &kp F11  &kp F12  &trans    &trans  &kp KP_PLUS            &kp KP_NUMBER_0  &trans           &kp KP_DOT       &trans         &trans
-                                                   &trans           &to 0    &trans   &trans    &trans  &trans                 &trans           &trans
+&ext_power EP_TOG  &sys_reset      &bootloader       &kp C_MUTE       &kp C_VOLUME_DOWN  &kp C_VOLUME_UP                    &kp EQUAL              &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp ASTERISK   &kp C_AL_COFFEE
+&trans             &trans          &kp UP_ARROW      &none            &trans             &none                              &kp LEFT_PARENTHESIS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_DIVIDE  &trans
+&trans             &kp LEFT_ARROW  &kp DOWN_ARROW    &kp RIGHT_ARROW  &none              &none                              &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PLUS       &trans
+&trans             &kp C_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_NEXT       &none              &none            &trans    &trans  &kp KP_PLUS            &kp KP_NUMBER_0  &trans           &kp KP_DOT       &trans         &trans
+                                                     &trans           &to 0              &trans           &trans    &trans  &trans                 &trans           &trans
             >;
         };
     };

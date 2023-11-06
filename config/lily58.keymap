@@ -37,6 +37,16 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        go_home {
+            bindings = <&to 0>;
+            key-positions = <52 56>;
+            layers = <1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 

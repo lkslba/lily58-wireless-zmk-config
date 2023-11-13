@@ -25,7 +25,7 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPSLOCK>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
         Apo_Q: Apo_Q {
             compatible = "zmk,behavior-mod-morph";
@@ -93,11 +93,11 @@
 
             label = "Base";
             bindings = <
-&kp C_AL_COFFEE          &kp N1  &kp N2  &kp N3       &kp N4                  &kp N5                                                      &kp N6         &kp N7                   &kp N8         &kp N9   &kp N0    &kp MINUS
-&kp TAB                  &kp Q   &kp W   &kp E        &kp R                   &kp T                                                       &kp Y          &kp U                    &kp I          &kp O    &kp P     &kp LEFT_BRACKET
-&mt LEFT_CONTROL ESCAPE  &kp A   &kp S   &kp D        &kp F                   &kp G                                                       &kp H          &kp J                    &kp K          &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT           &kp Z   &kp X   &mt LC(C) C  &mt LC(V) V             &kp B       &kp LS(N8)               &kp LS(N9)             &kp N          &kp M                    &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
-                                         &kp LALT     &mt LEFT_COMMAND LG(C)  &kp DELETE  &my_layer_tap 1 SPACE    &my_layer_tap 2 ENTER  &kp BACKSPACE  &mt RIGHT_COMMAND RG(V)  &kp RIGHT_ALT
+&kp C_AL_COFFEE          &kp N1  &kp N2  &kp N3    &kp N4                  &kp N5                                                      &kp N6         &kp N7                   &kp N8         &kp N9   &kp N0    &kp MINUS
+&kp TAB                  &kp Q   &kp W   &kp E     &kp R                   &kp T                                                       &kp Y          &kp U                    &kp I          &kp O    &kp P     &kp LEFT_BRACKET
+&mt LEFT_CONTROL ESCAPE  &kp A   &kp S   &kp D     &kp F                   &kp G                                                       &kp H          &kp J                    &kp K          &kp L    &kp SEMI  &kp SQT
+&sh                      &kp Z   &kp X   &kp C     &kp V                   &kp B       &kp LS(N8)               &kp LS(N9)             &kp N          &kp M                    &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
+                                         &kp LALT  &mt LEFT_COMMAND LG(C)  &kp DELETE  &my_layer_tap 1 SPACE    &my_layer_tap 2 ENTER  &kp BACKSPACE  &mt RIGHT_COMMAND RG(V)  &kp RIGHT_ALT
             >;
         };
 
@@ -121,11 +121,11 @@
 
         nav {
             bindings = <
-&kp F1  &kp F2  &kp F3          &kp F4          &kp F5     &kp F6                    &kp F7  &kp F8           &kp F9          &kp F10          &kp F11  &kp F12
-&none   &none   &none           &kp UP_ARROW    &none      &none                     &none   &kp LG(LS(TAB))  &kp UP_ARROW    &kp LG(TAB)      &none    &none
-&none   &none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &none                     &none   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &to 0
-&none   &none   &none           &none           &none      &none   &none     &none   &none   &kp LC(LS(TAB))  &none           &kp LC(TAB)      &none    &lh RIGHT_SHIFT 2
-                                &trans          &trans     &trans  &trans    &trans  &trans  &trans           &trans
+&kp F1  &kp F2  &kp F3            &kp F4                &kp F5             &kp F6                    &kp F7  &kp F8           &kp F9          &kp F10          &kp F11  &kp F12
+&none   &none   &none             &kp UP_ARROW          &none              &none                     &none   &kp LG(LS(TAB))  &kp UP_ARROW    &kp LG(TAB)      &none    &none
+&none   &none   &kp LEFT_ARROW    &kp DOWN_ARROW        &kp RIGHT          &none                     &none   &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &none    &to 0
+&none   &none   &kp LA(LC(LEFT))  &kp LA(LC(UP_ARROW))  &kp LA(LC(RIGHT))  &none   &none     &none   &none   &kp LC(LS(TAB))  &none           &kp LC(TAB)      &none    &lh RIGHT_SHIFT 2
+                                  &trans                &trans             &trans  &trans    &trans  &trans  &trans           &trans
             >;
 
             label = "Nav";

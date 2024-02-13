@@ -159,11 +159,11 @@
 
             label = "Sym";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0           &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3   &bt BT_SEL 4                                       &none             &none             &none             &none           &none          &trans
-&trans      &kp RA(N5)             &kp RA(NUMBER_6)  &kp RA(N8)        &kp RA(N9)     &kp RA(RS(Y))                                      &kp RS(RA(X))     &kp LS(N7)        &kp RA(N7)        &kp RA(LS(N7))  &none          &none
-&trans      &kp LS(RIGHT_BRACKET)  &kp LS(N5)        &kp RA(NUMBER_3)  &kp RA(EQUAL)  &kp RA(Q)                                          &kp LS(NUMBER_6)  &kp LS(NUMBER_1)  &kp LS(NUMBER_3)  &kp SLASH       &kp BACKSLASH  &to 0
-&trans      &kp LS(MINUS)          &none             &none             &kp MINUS      &kp LS(NUMBER_2)  &open_bracket    &close_bracket  &kp LS(N8)        &kp LS(N9)        &kp CARET         &kp RA(N8)      &kp RA(N9)     &lh RIGHT_SHIFT 3
-                                                     &trans            &trans         &trans            &trans           &trans          &trans            &trans            &trans
+&bt BT_CLR  &bt BT_SEL 0           &bt BT_SEL 1     &bt BT_SEL 2      &bt BT_SEL 3       &bt BT_SEL 4                                       &none             &none             &none             &none              &none          &trans
+&trans      &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RA(RS(Z))                                      &kp RS(RA(X))     &kp LS(N7)        &kp RA(N7)        &kp RA(LESS_THAN)  &none          &none
+&trans      &kp LS(RIGHT_BRACKET)  &kp LS(N5)       &kp RA(NUMBER_3)  &kp RA(EQUAL)      &kp RA(Q)                                          &kp LS(NUMBER_6)  &kp LS(NUMBER_1)  &kp LS(NUMBER_3)  &kp SLASH          &kp BACKSLASH  &to 0
+&trans      &kp LS(MINUS)          &none            &none             &kp MINUS          &kp LS(NUMBER_2)  &open_bracket    &close_bracket  &kp LS(N8)        &kp LS(N9)        &kp CARET         &kp RA(N8)         &kp RA(N9)     &lh RIGHT_SHIFT 3
+                                                    &trans            &trans             &trans            &trans           &trans          &trans            &trans            &trans
             >;
         };
     };
